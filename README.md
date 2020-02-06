@@ -10,7 +10,8 @@ The probability of finding rain and the memory function are calculated using the
 
 TheThe script analysis_netcdf_data.py is used to analysed the Netcdf files. The data are then saved to be used in the files script_figure1_2_3_7_8.py,  script_figure5_6_10.py, script_figure4_9.py, memory_function.py.
 
-The Netcdf files are very heavy to be loaded here. There are available on directory: 
+The Netcdf files are very heavy to be loaded here. There are available on directory "/gws/nopw/j04/paracon_rdg/users/cdaleu"
+and are available to share 
 
 Data for the control simulation have the subscript "_ctrl" or "_CTRL"
 Data for the weakly forced simulations have the subcript "_mhalf" of "_MHALF"
@@ -43,11 +44,11 @@ The following data are timeseries (depend on time only) output every 15 minutes:
   The following data depend on nx and ny (number of grid points in he x and y directions): horizontal slices at 24h
          thxy24h_1km_CTRL_snap.npy, thxy24h_3km_CTRL_snap.npy, qvxy24h_1km_CTRL_snap.npy, qvxy24h_3km_CTRL_snap.npy
    
-  The following data depend on time, nx and ny (2D surface precipitation fields): surf_precip_xy_time_CTRL.npy,
-         surf_precip_xy_time_mhalf.npy, surf_precip_xy_time_phalf.npy, surf_precip_xy_time_RTHQVD2.npy, 
-         surf_precip_xy_time_RTHQVD3.npy, surf_precip_xy_time_RTHQVD4.npy, surf_precip_xy_time_RTHQVD5.npy, 
-         surf_precip_xy_time_RTHQVD6.npy, surf_precip_xy_time_RTHQVD7.npy, surf_precip_xy_time_RTHQVD8.npy,
-        surf_precip_xy_time_RTHQVD9.npy, surf_precip_xy_time_RTHQVD10.npy
+  The following data depend on time, nx and ny (2D surface precipitation fields). There are too heavy to be uploaded here 
+  and can be generated using the script analysis_netcdf_data.py: 
+         surf_precip_xy_time_CTRL.npy, surf_precip_xy_time_mhalf.npy, surf_precip_xy_time_phalf.npy, 
+         surf_precip_xy_time_RTHQVD2.npy, surf_precip_xy_time_RTHQVD3.npy, surf_precip_xy_time_RTHQVD4.npy,                surf_precip_xy_time_RTHQVD5.npy, surf_precip_xy_time_RTHQVD6.npy, surf_precip_xy_time_RTHQVD7.npy, 
+         surf_precip_xy_time_RTHQVD8.npy, surf_precip_xy_time_RTHQVD9.npy, surf_precip_xy_time_RTHQVD10.npy
         
   The following data depend on nz and ny (number of vertical levels and number of grid points in the y direction): 
   vertical slices at 24h    
