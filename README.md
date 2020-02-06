@@ -6,6 +6,12 @@ script_figure1_2_3_7_8.py for figures 1, 2, 3, 7, and 8
 script_figure5_6_10.py for figures 5, 6, and 10, and  
 script_figure4_9.py for figures 4 and 9.
 
+The probability of finding rain and the memory function are calculated using the script: memory_function.py
+
+TheThe script analysis_netcdf_data.py is used to analysed the Netcdf files. The data are then saved to be used in the files script_figure1_2_3_7_8.py,  script_figure5_6_10.py, script_figure4_9.py, memory_function.py.
+
+The Netcdf files are very heavy to be loaded here. There are available on directory: 
+
 Data for the control simulation have the subscript "_ctrl" or "_CTRL"
 Data for the weakly forced simulations have the subcript "_mhalf" of "_MHALF"
 Data for the strongly forced simulations have the subcript "_phalf" of "_PHALF"
@@ -37,6 +43,12 @@ The following data are timeseries (depend on time only) output every 15 minutes:
   The following data depend on nx and ny (number of grid points in he x and y directions): horizontal slices at 24h
          thxy24h_1km_CTRL_snap.npy, thxy24h_3km_CTRL_snap.npy, qvxy24h_1km_CTRL_snap.npy, qvxy24h_3km_CTRL_snap.npy
    
+  The following data depend on time, nx and ny (2D surface precipitation fields): surf_precip_xy_time_CTRL.npy,
+         surf_precip_xy_time_mhalf.npy, surf_precip_xy_time_phalf.npy, surf_precip_xy_time_RTHQVD2.npy, 
+         surf_precip_xy_time_RTHQVD3.npy, surf_precip_xy_time_RTHQVD4.npy, surf_precip_xy_time_RTHQVD5.npy, 
+         surf_precip_xy_time_RTHQVD6.npy, surf_precip_xy_time_RTHQVD7.npy, surf_precip_xy_time_RTHQVD8.npy,
+        surf_precip_xy_time_RTHQVD9.npy, surf_precip_xy_time_RTHQVD10.npy
+        
   The following data depend on nz and ny (number of vertical levels and number of grid points in the y direction): 
   vertical slices at 24h    
          thzy24h_snap.npy, qvzy24h_snap.npy
